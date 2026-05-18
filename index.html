@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch This Before You Build Another List | AIMatrix Spillover</title>
+    <meta name="description" content="Most people waste years building email lists the hard way. This 12-minute video shows you the passive system that does it FOR you.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --dark-bg: #1a1a2e;
+            --darker: #0f0f1e;
+            --accent-red: #ff4757;
+            --accent-green: #2ed573;
+            --accent-blue: #1e90ff;
+            --accent-yellow: #ffa502;
+            --white: #ffffff;
+            --off-white: #f1f2f6;
+            --gray-light: #dfe4ea;
+            --gray-mid: #a4b0be;
+            --gray-dark: #57606f;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--darker);
+            color: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        /* CONTAINER */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+        
+        /* HEADER */
+        .header {
+            text-align: center;
+            padding: 40px 0 20px;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 8px 20px;
+            background: var(--accent-red);
+            color: var(--white);
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-radius: 6px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            color: var(--white);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 .highlight {
+            color: var(--accent-yellow);
+        }
+        
+        .subhead {
+            font-size: 1.3rem;
+            color: var(--gray-light);
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+        
+        /* VIDEO SECTION */
+        .video-section {
+            background: var(--dark-bg);
+            border-radius: 16px;
+            padding: 32px;
+            margin: 40px 0;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            background: #000;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+        }
+        
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .video-cta {
+            text-align: center;
+            margin-top: 24px;
+        }
+        
+        .video-cta p {
+            font-size: 1rem;
+            color: var(--gray-mid);
+            margin-bottom: 20px;
+        }
+        
+        .arrow-down {
+            font-size: 2rem;
+            color: var(--accent-yellow);
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        
+        /* OPT-IN FORM */
+        .optin-box {
+            background: linear-gradient(135deg, var(--dark-bg) 0%, #2c2c3e 100%);
+            border-radius: 16px;
+            padding: 48px;
+            margin: 60px 0;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+            border: 3px solid var(--accent-green);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .optin-box::before {
+            content: '✓';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            font-size: 10rem;
+            color: var(--accent-green);
+            opacity: 0.05;
+            font-weight: 900;
+        }
+        
+        .optin-box h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            color: var(--accent-green);
+            text-align: center;
+        }
+        
+        .optin-box p {
+            font-size: 1.1rem;
+            color: var(--gray-light);
+            text-align: center;
+            margin-bottom: 32px;
+            line-height: 1.7;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 18px 24px;
+            font-size: 1.1rem;
+            font-family: 'Inter', sans-serif;
+            color: var(--white);
+            background: rgba(255, 255, 255, 0.08);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--accent-green);
+            background: rgba(255, 255, 255, 0.12);
+            box-shadow: 0 0 20px rgba(46, 213, 115, 0.3);
+        }
+        
+        .form-group input::placeholder {
+            color: var(--gray-mid);
+        }
+        
+        .cta-button {
+            width: 100%;
+            padding: 22px 40px;
+            font-size: 1.3rem;
+            font-weight: 900;
+            color: var(--white);
+            background: linear-gradient(135deg, var(--accent-green) 0%, #26de81 100%);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 30px rgba(46, 213, 115, 0.4);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.6s;
+        }
+        
+        .cta-button:hover::before {
+            left: 100%;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(46, 213, 115, 0.6);
+        }
+        
+        .reassurance {
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--gray-mid);
+            margin-top: 20px;
+        }
+        
+        .reassurance span {
+            display: inline-block;
+            margin: 0 8px;
+        }
+        
+        /* COMPARISON SECTION */
+        .comparison {
+            margin: 80px 0;
+        }
+        
+        .comparison h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 60px;
+            color: var(--white);
+        }
+        
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .comparison-card {
+            background: var(--dark-bg);
+            border-radius: 16px;
+            padding: 40px 32px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+        }
+        
+        .comparison-card.bad {
+            border: 3px solid var(--accent-red);
+        }
+        
+        .comparison-card.good {
+            border: 3px solid var(--accent-green);
+        }
+        
+        .comparison-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        
+        .comparison-card.bad .comparison-icon {
+            color: var(--accent-red);
+        }
+        
+        .comparison-card.good .comparison-icon {
+            color: var(--accent-green);
+        }
+        
+        .comparison-card h3 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        
+        .comparison-card.bad h3 {
+            color: var(--accent-red);
+        }
+        
+        .comparison-card.good h3 {
+            color: var(--accent-green);
+        }
+        
+        .comparison-card p {
+            font-size: 1.05rem;
+            color: var(--gray-light);
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+        
+        .comparison-list {
+            list-style: none;
+            text-align: left;
+            margin-top: 24px;
+        }
+        
+        .comparison-list li {
+            padding: 10px 0;
+            font-size: 1rem;
+            color: var(--gray-light);
+            position: relative;
+            padding-left: 32px;
+        }
+        
+        .comparison-card.bad .comparison-list li:before {
+            content: "✗";
+            position: absolute;
+            left: 0;
+            color: var(--accent-red);
+            font-weight: 900;
+            font-size: 1.2rem;
+        }
+        
+        .comparison-card.good .comparison-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-green);
+            font-weight: 900;
+            font-size: 1.2rem;
+        }
+        
+        /* BULLET POINTS */
+        .benefits {
+            margin: 80px 0;
+        }
+        
+        .benefits h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 40px;
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .benefit-list {
+            list-style: none;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .benefit-list li {
+            background: var(--dark-bg);
+            padding: 24px 28px 24px 70px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            font-size: 1.15rem;
+            color: var(--gray-light);
+            position: relative;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border-left: 5px solid var(--accent-blue);
+        }
+        
+        .benefit-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 24px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--accent-blue);
+        }
+        
+        .benefit-list li strong {
+            color: var(--white);
+        }
+        
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 60px 20px 40px;
+            color: var(--gray-mid);
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 100px;
+        }
+        
+        footer p {
+            margin-bottom: 10px;
+        }
+        
+        /* MOBILE */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subhead {
+                font-size: 1.1rem;
+            }
+            
+            .comparison-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .optin-box {
+                padding: 32px 24px;
+            }
+            
+            .optin-box h2 {
+                font-size: 1.6rem;
+            }
+            
+            .video-section {
+                padding: 20px;
+            }
+            
+            .comparison h2,
+            .benefits h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <div class="badge">🔥 FREE TRAINING VIDEO</div>
+            <h1>You're <span class="highlight">Wasting Years</span> Building Your List The Hard Way</h1>
+            <p class="subhead">Watch this 12-minute video to discover the passive system that builds your email list FOR you—while your team does the work.</p>
+        </header>
+
+        <!-- VIDEO SECTION -->
+        <section class="video-section">
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/_35LOHsUa9E?rel=0&modestbranding=1" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-cta">
+                <p><strong>👇 After watching, enter your email below to get instant access 👇</strong></p>
+                <div class="arrow-down">↓</div>
+            </div>
+        </section>
+
+        <!-- PRIMARY OPT-IN -->
+        <div class="optin-box">
+            <h2>✓ Yes! I Want Passive List Growth</h2>
+            <p>Enter your email below and I'll send you instant access to the AIMatrix Spillover system—plus a step-by-step guide to get started today.</p>
+            
+            <form action="https://scalefast.aimatrixspillover.com/get_started/?tr=clou" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your First Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Best Email" required>
+                </div>
+                <button type="submit" class="cta-button">Get Instant Access Now</button>
+            </form>
+            
+            <p class="reassurance">
+                <span>✓ 100% Free</span>
+                <span>✓ No Credit Card</span>
+                <span>✓ Instant Access</span>
+            </p>
+        </div>
+
+        <!-- COMPARISON SECTION -->
+        <section class="comparison">
+            <h2>Two Ways to Build an Email List...</h2>
+            
+            <div class="comparison-grid">
+                <!-- BAD WAY -->
+                <div class="comparison-card bad">
+                    <div class="comparison-icon">✗</div>
+                    <h3>The Old Way</h3>
+                    <p>Grinding for years, chasing subscribers one at a time</p>
+                    
+                    <ul class="comparison-list">
+                        <li>Cold outreach that gets ignored</li>
+                        <li>Expensive paid ads that burn budget</li>
+                        <li>Lead magnets nobody wants</li>
+                        <li>Complex funnels you never finish</li>
+                        <li>Years to build a list that converts</li>
+                    </ul>
+                </div>
+                
+                <!-- GOOD WAY -->
+                <div class="comparison-card good">
+                    <div class="comparison-icon">✓</div>
+                    <h3>The AIMatrix Way</h3>
+                    <p>Passive list growth through spillover momentum</p>
+                    
+                    <ul class="comparison-list">
+                        <li>Your team builds YOUR list automatically</li>
+                        <li>Zero cold outreach required</li>
+                        <li>No ads, no funnels, no complexity</li>
+                        <li>Compound growth every single day</li>
+                        <li>You own the asset—forever</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENEFITS -->
+        <section class="benefits">
+            <h2>What You'll Discover Inside</h2>
+            
+            <ul class="benefit-list">
+                <li><strong>Why email lists = wealth</strong> and why most people will never build one the traditional way</li>
+                <li><strong>The spillover mechanism</strong> that turns your team's growth into YOUR subscriber growth</li>
+                <li><strong>How to own your audience</strong> instead of renting attention from platforms like Facebook and Instagram</li>
+                <li><strong>The compound effect</strong> that makes your list grow faster every month without extra effort</li>
+                <li><strong>Why this isn't MLM</strong> and how it's actually a smarter way to build digital assets</li>
+                <li><strong>Step-by-step setup</strong> so you can start building passively TODAY</li>
+            </ul>
+        </section>
+
+        <!-- FINAL OPT-IN -->
+        <div class="optin-box">
+            <h2>Ready to Stop Grinding?</h2>
+            <p>Most people waste years trying to build an email list. You can start growing yours passively today.</p>
+            
+            <form action="https://scalefast.aimatrixspillover.com/get_started/?tr=clou" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your First Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Best Email" required>
+                </div>
+                <button type="submit" class="cta-button">Get Instant Access Now</button>
+            </form>
+            
+            <p class="reassurance">
+                <span>✓ No Spam</span>
+                <span>✓ Unsubscribe Anytime</span>
+                <span>✓ Your Info is Safe</span>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 VernFlow. All rights reserved.</p>
+        <p>This site is not affiliated with Facebook, Instagram, TikTok, YouTube, or any social media platform.</p>
+    </footer>
+</body>
+</html>
